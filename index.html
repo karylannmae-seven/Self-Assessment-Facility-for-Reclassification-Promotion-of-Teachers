@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self-Assessment Facility</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <style>
+        /* ensure sections are hidden until a position is selected */
+        .hidden { display: none; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Self-Assessment Facility</h1>
+            <p>Summary of the Achievement of PPST Indicators for Reclassification of Teachers</p>
+        </header>
+
+        <section class="config-section">
+            <div class="dropdown-group">
+                <label for="current-position">Currently Employed as:</label>
+                <select id="current-position">
+                    <option value="" selected disabled>-- Select Current Position --</option>
+                    <option value="Teacher I">Teacher I</option>
+                    <option value="Teacher II">Teacher II</option>
+                    <option value="Teacher III">Teacher III</option>
+                    <option value="Teacher IV">Teacher IV</option>
+                    <option value="Teacher V">Teacher V</option>
+                    <option value="Teacher VI">Teacher VI</option>
+                    <option value="Teacher VII">Teacher VII</option>
+                    <option value="Master Teacher I">Master Teacher I</option>
+                    <option value="Master Teacher II">Master Teacher II</option>
+                    <option value="Master Teacher III">Master Teacher III</option>
+                    <option value="Master Teacher IV">Master Teacher IV</option>
+                    <option value="Master Teacher V">Master Teacher V</option>
+                </select>
+            </div>
+            <div class="dropdown-group">
+                <label for="applied-position">Select the Position You are Applying For</label>
+                <select id="applied-position">
+                    <option value="" selected disabled>-- Select Target Position --</option>
+                    <option value="Teacher II">Teacher II</option>
+                    <option value="Teacher III">Teacher III</option>
+                    <option value="Teacher IV">Teacher IV</option>
+                    <option value="Teacher V">Teacher V</option>
+                    <option value="Teacher VI">Teacher VI</option>
+                    <option value="Teacher VII">Teacher VII</option>
+                    <option value="Master Teacher I">Master Teacher I</option>
+                    <option value="Master Teacher II">Master Teacher II</option>
+                    <option value="Master Teacher III">Master Teacher III</option>
+                    <option value="Master Teacher IV">Master Teacher IV</option>
+                    <option value="Master Teacher V">Master Teacher V</option>
+                </select>
+             </div>
+        </section>
+
+        <!-- SECTION 1: TEACHER II - VII -->
+        <section id="rftp-teacher" class="assessment-section hidden">
+            <h2 class="assessment-title">Summary of the Achievement of PPST Indicators</h2>
+            <p class="assessment-subtitle">RFTP (Teacher II–VII)</p>
+            <form id="assessment-form">
+                <div class="domain-header">
+                    <h3>Domain 1. Content Knowledge and Pedagogy</h3>
+                </div>
+                <div class="indicator-table-header">
+                    <span class="header-no">No.</span>
+                    <span class="header-indicator">DOMAIN/STRAND/INDICATORS</span>
+                    <span class="header-option">Outstanding</span>
+                    <span class="header-option">Very Satisfactory</span>
+                    <span class="header-option">Did Not Meet</span>
+                </div>
+
+                <div class="indicator-row">
+                    <span class="no">1</span>
+                    <span class="indicator-text">1.1.2 Apply knowledge of content within and across curriculum teaching areas. <span class="tag-coi">[COI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_1" value="outstanding" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_1" value="verySatisfactory" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_1" value="didNotMeet" data-type="coi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">2</span>
+                    <span class="indicator-text">1.2.2 Use research-based knowledge and principles of teaching and learning to enhance professional practice. <span class="tag-ncoi">[NCOI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_2" value="outstanding" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_2" value="verySatisfactory" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_2" value="didNotMeet" data-type="ncoi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">3</span>
+                    <span class="indicator-text">1.3.2 Ensure the positive use of ICT to facilitate the teaching and learning process. <span class="tag-coi">[COI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_3" value="outstanding" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_3" value="verySatisfactory" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_3" value="didNotMeet" data-type="coi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">4</span>
+                    <span class="indicator-text">I .4.2 Use a range of teaching strategies that enhance learner achievement in literacy and numeracy skills. <span class="tag-coi">[COI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_4" value="outstanding" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_4" value="verySatisfactory" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_4" value="didNotMeet" data-type="coi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">5</span>
+                    <span class="indicator-text">1.5.2 Apply a range of teaching strategies to develop critical and creative thinking, as well as other higher-order thinking skills. <span class="tag-coi">[COI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_5" value="outstanding" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_5" value="verySatisfactory" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_5" value="didNotMeet" data-type="coi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">6</span>
+                    <span class="indicator-text">1.6.2 Display proficient use of Mother Tongue, Filipino and English to facilitate teaching and learning. <span class="tag-coi">[COI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_6" value="outstanding" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_6" value="verySatisfactory" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_6" value="didNotMeet" data-type="coi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">7</span>
+                    <span class="indicator-text">1.7.2 Use effective verbal and non-verbal classroom communication strategies to support learner understanding, participation, engagement and achievement <span class="tag-coi">[COI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_7" value="outstanding" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_7" value="verySatisfactory" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_7" value="didNotMeet" data-type="coi"></div>
+                </div>
+
+                <div class="domain-header">
+                    <h3>Domain 2. Learning Environment</h3>
+                </div>
+                <div class="indicator-table-header">
+                    <span class="header-no">No.</span>
+                    <span class="header-indicator">DOMAIN/STRAND/INDICATORS</span>
+                    <span class="header-option">Outstanding</span>
+                    <span class="header-option">Very Satisfactory</span>
+                    <span class="header-option">Did Not Meet</span>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">8</span>
+                    <span class="indicator-text">2.1.2 Establish safe and secure learning environments to enhance learning through the consistent implementation of policies, guidelines and procedures. <span class="tag-coi">[COI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_8" value="outstanding" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_8" value="verySatisfactory" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_8" value="didNotMeet" data-type="coi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">9</span>
+                    <span class="indicator-text">2.2.2 Maintain learning environments that promote fairness, respect and care to encourage learning. <span class="tag-coi">[COI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_9" value="outstanding" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_9" value="verySatisfactory" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_9" value="didNotMeet" data-type="coi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">10</span>
+                    <span class="indicator-text">2.3.2 Manage classroom structure to engage learners, individually or in groups, in meaningful exploration, discovery and hands-on activities within a range of physical learning environments. <span class="tag-coi">[COI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_10" value="outstanding" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_10" value="verySatisfactory" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_10" value="didNotMeet" data-type="coi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">11</span>
+                    <span class="indicator-text">2.4.2 Maintain supportive learning environments that nurture and inspire learners to participate, cooperate and collaborate in continued learning. <span class="tag-coi">[COI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_11" value="outstanding" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_11" value="verySatisfactory" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_11" value="didNotMeet" data-type="coi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">12</span>
+                    <span class="indicator-text">2.5.2 Apply a range of successful strategies that maintain learning environments that motivate learners to work productively by assuming responsibility for their own learning. <span class="tag-coi">[COI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_12" value="outstanding" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_12" value="verySatisfactory" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_12" value="didNotMeet" data-type="coi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">13</span>
+                    <span class="indicator-text">2.6.2 Manage learner behavior constructively by applying positive and nonviolent discipline to ensure learning-focused environments. <span class="tag-coi">[COI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_13" value="outstanding" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_13" value="verySatisfactory" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_13" value="didNotMeet" data-type="coi"></div>
+                </div>
+
+                <div class="domain-header">
+                    <h3>Domain 3. Diversity of Learners</h3>
+                </div>
+                <div class="indicator-table-header">
+                    <span class="header-no">No.</span>
+                    <span class="header-indicator">DOMAIN/STRAND/INDICATORS</span>
+                    <span class="header-option">Outstanding</span>
+                    <span class="header-option">Very Satisfactory</span>
+                    <span class="header-option">Did Not Meet</span>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">14</span>
+                    <span class="indicator-text">3.1.2 Use differentiated, developmentally appropriate learning experiences to address learners' gender, needs, strengths, interests and experiences. <span class="tag-coi">[COI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_14" value="outstanding" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_14" value="verySatisfactory" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_14" value="didNotMeet" data-type="coi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">15</span>
+                    <span class="indicator-text">3.2.2 Establish a learner-centered culture by using teaching strategies that respond to learners' linguistic, cultural, socio-economic and religious backgrounds. <span class="tag-coi">[COI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_15" value="outstanding" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_15" value="verySatisfactory" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_15" value="didNotMeet" data-type="coi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">16</span>
+                    <span class="indicator-text">3.3.2 Design, adapt and implement teaching strategies that are responsive to learners with disabilities, giftedness and talents. <span class="tag-coi">[COI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_16" value="outstanding" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_16" value="verySatisfactory" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_16" value="didNotMeet" data-type="coi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">17</span>
+                    <span class="indicator-text">3.4.2 Plan and deliver teaching strategies that are responsive to the special educational needs of learners in difficult circumstances, including: geographic isolation; chronic illness; displacement due to armed conflict, urban resettlement or disasters; child abuse and child labor practices. <span class="tag-coi">[COI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_17" value="outstanding" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_17" value="verySatisfactory" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_17" value="didNotMeet" data-type="coi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">18</span>
+                    <span class="indicator-text">3.5.2 Adapt and use culturally appropriate teaching strategies to address the needs of learners from indigenous groups. <span class="tag-coi">[COI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_18" value="outstanding" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_18" value="verySatisfactory" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_18" value="didNotMeet" data-type="coi"></div>
+                </div>
+
+                <div class="domain-header">
+                    <h3>Domain 4. Curriculum and Planning</h3>
+                </div>
+                <div class="indicator-table-header">
+                    <span class="header-no">No.</span>
+                    <span class="header-indicator">DOMAIN/STRAND/INDICATORS</span>
+                    <span class="header-option">Outstanding</span>
+                    <span class="header-option">Very Satisfactory</span>
+                    <span class="header-option">Did Not Meet</span>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">19</span>
+                    <span class="indicator-text">4.1.2 Plan, manage and implement developmentally sequenced teaching and learning processes to meet curriculum requirements and varied teaching contexts. <span class="tag-coi">[COI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_19" value="outstanding" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_19" value="verySatisfactory" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_19" value="didNotMeet" data-type="coi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">20</span>
+                    <span class="indicator-text">4.2.2 Set achievable and appropriate learning outcomes that are aligned with learning competencies. <span class="tag-ncoi">[NCOI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_20" value="outstanding" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_20" value="verySatisfactory" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_20" value="didNotMeet" data-type="ncoi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">21</span>
+                    <span class="indicator-text">4.3.2 Adapt and implement learning programs that ensure relevance and responsiveness to the needs of all learners. <span class="tag-ncoi">[NCOI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_21" value="outstanding" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_21" value="verySatisfactory" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_21" value="didNotMeet" data-type="ncoi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">22</span>
+                    <span class="indicator-text">4.4.2 Participate in collegial discussions that use teacher and learner feedback to enrich teaching practice. <span class="tag-ncoi">[NCOI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_22" value="outstanding" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_22" value="verySatisfactory" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_22" value="didNotMeet" data-type="ncoi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">23</span>
+                    <span class="indicator-text">4.5.2 Select, develop, organize and use appropriate teaching and learning resources, including ICT, to address learning goals. <span class="tag-coi">[COI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_23" value="outstanding" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_23" value="verySatisfactory" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_23" value="didNotMeet" data-type="coi"></div>
+                </div>
+
+                <div class="domain-header">
+                    <h3>Domain 5. Assessment and Reporting</h3>
+                </div>
+                <div class="indicator-table-header">
+                    <span class="header-no">No.</span>
+                    <span class="header-indicator">DOMAIN/STRAND/INDICATORS</span>
+                    <span class="header-option">Outstanding</span>
+                    <span class="header-option">Very Satisfactory</span>
+                    <span class="header-option">Did Not Meet</span>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">24</span>
+                    <span class="indicator-text">5.1.2. Design, select, organize and use diagnostic, formative, and summative assessment strategies consistent with curriculum requirements. <span class="tag-coi">[COI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_24" value="outstanding" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_24" value="verySatisfactory" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_24" value="didNotMeet" data-type="coi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">25</span>
+                    <span class="indicator-text">5.2.2 Monitor and evaluate learner progress and achievement using learner attainment data. <span class="tag-ncoi">[NCOI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_25" value="outstanding" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_25" value="verySatisfactory" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_25" value="didNotMeet" data-type="ncoi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">26</span>
+                    <span class="indicator-text">5.3.2 Use strategies for providing timely, accurate and constructive feedback to improve learner performance. <span class="tag-coi">[COI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_26" value="outstanding" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_26" value="verySatisfactory" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_26" value="didNotMeet" data-type="coi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">27</span>
+                    <span class="indicator-text">5.4.2 Communicate promptly and clearly the learners' needs, progress and achievement to key stakeholders, including parents/ guardians. <span class="tag-ncoi">[NCOI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_27" value="outstanding" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_27" value="verySatisfactory" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_27" value="didNotMeet" data-type="ncoi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">28</span>
+                    <span class="indicator-text">5.5.2 Utilize assessment data to inform the modification of teaching and learning practices and programs. <span class="tag-ncoi">[NCOI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_28" value="outstanding" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_28" value="verySatisfactory" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_28" value="didNotMeet" data-type="ncoi"></div>
+                </div>
+
+                <div class="domain-header">
+                    <h3>Domain 6. Community Linkages and Professional Engagement</h3>
+                </div>
+                <div class="indicator-table-header">
+                    <span class="header-no">No.</span>
+                    <span class="header-indicator">DOMAIN/STRAND/INDICATORS</span>
+                    <span class="header-option">Outstanding</span>
+                    <span class="header-option">Very Satisfactory</span>
+                    <span class="header-option">Did Not Meet</span>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">29</span>
+                    <span class="indicator-text">6.1.2 Maintain learning environments that are responsive to community contexts. <span class="tag-ncoi">[NCOI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_29" value="outstanding" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_29" value="verySatisfactory" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_29" value="didNotMeet" data-type="ncoi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">30</span>
+                    <span class="indicator-text">6.2.2 Build relationships with parents/ guardians and the wider school community to facilitate involvement in the educative process. <span class="tag-ncoi">[NCOI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_30" value="outstanding" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_30" value="verySatisfactory" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_30" value="didNotMeet" data-type="ncoi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">31</span>
+                    <span class="indicator-text">6.3.2 Review regularly personal teaching practice using existing laws and regulations that apply to the teaching profession and the responsibilities specified in the Code of Ethics for Professional Teachers. <span class="tag-ncoi">[NCOI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_31" value="outstanding" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_31" value="verySatisfactory" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_31" value="didNotMeet" data-type="ncoi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">32</span>
+                    <span class="indicator-text">6.4.2 Comply with and implement school policies and procedures consistently to foster harmonious relationships with learners, parents, and other stakeholders. <span class="tag-ncoi">[NCOI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_32" value="outstanding" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_32" value="verySatisfactory" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio"
+ name="indicator_32" value="didNotMeet" data-type="ncoi"></div>
+                </div>
+
+                <div class="domain-header">
+                    <h3>Domain 7. Personal Growth and Professional Development</h3>
+                </div>
+                <div class="indicator-table-header">
+                    <span class="header-no">No.</span>
+                    <span class="header-indicator">DOMAIN/STRAND/INDICATORS</span>
+                    <span class="header-option">Outstanding</span>
+                    <span class="header-option">Very Satisfactory</span>
+                    <span class="header-option">Did Not Meet</span>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">33</span>
+                    <span class="indicator-text">7.1.2 Apply a personal philosophy of teaching that is learner-centered. <span class="tag-ncoi">[NCOI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_33" value="outstanding" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_33" value="verySatisfactory" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_33" value="didNotMeet" data-type="ncoi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">34</span>
+                    <span class="indicator-text">7.2.2 Adopt practices that uphold the dignity of teaching as a profession by exhibiting qualities such as caring attitude, respect and integrity. <span class="tag-ncoi">[NCOI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_34" value="outstanding" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_34" value="verySatisfactory" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_34" value="didNotMeet" data-type="ncoi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">35</span>
+                    <span class="indicator-text">7.3.2 Participate in professional networks to share knowledge and to enhance practice. <span class="tag-ncoi">[NCOI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_35" value="outstanding" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_35" value="verySatisfactory" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_35" value="didNotMeet" data-type="ncoi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">36</span>
+                    <span class="indicator-text">7.4.2 Develop a personal professional improvement plan based on reflection of one's practice and ongoing professional learning. <span class="tag-ncoi">[NCOI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_36" value="outstanding" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_36" value="verySatisfactory" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_36" value="didNotMeet" data-type="ncoi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">37</span>
+                    <span class="indicator-text">7.5.2 Set professional development goals based on the Philippine Professional Standards for Teachers. <span class="tag-ncoi">[NCOI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_37" value="outstanding" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_37" value="verySatisfactory" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_37" value="didNotMeet" data-type="ncoi"></div>
+                </div>              
+            </form>
+        </section>
+
+        <!-- SECTION 2: MT I - III -->
+        <section id="rftp-mt-i-iii" class="assessment-section hidden">
+            <h2 class="assessment-title">Summary of the Achievement of PPST Indicators</h2>
+            <p class="assessment-subtitle">RFTP (MT I–III)</p>
+            <form id="assessment-form-mt1">
+                <div class="domain-header">
+                    <h3>Domain 1. Content Knowledge and Pedagogy</h3>
+                </div>
+                <div class="indicator-table-header">
+                    <span class="header-no">No.</span>
+                    <span class="header-indicator">DOMAIN/STRAND/INDICATORS</span>
+                    <span class="header-option">Outstanding</span>
+                    <span class="header-option">Very Satisfactory</span>
+                    <span class="header-option">Did Not Meet</span>
+                </div>
+
+                <div class="indicator-row">
+                    <span class="no">1</span>
+                    <span class="indicator-text">1.1.3 Model effective applications of content knowledge within and across curriculum teaching areas. <span class="tag-coi">[COI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_1" value="outstanding" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_1" value="verySatisfactory" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_1" value="didNotMeet" data-type="coi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">2</span>
+                    <span class="indicator-text">1.2.3 Collaborate with colleagues in the conduct and application of research to enrich knowledge of content and pedagogy. <span class="tag-ncoi">[NCOI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_2" value="outstanding" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_2" value="verySatisfactory" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_2" value="didNotMeet" data-type="ncoi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">3</span>
+                    <span class="indicator-text">1.3.3 Promote effective strategies in the positive use of ICT to facilitate the teaching and learning process. <span class="tag-coi">[COI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_3" value="outstanding" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_3" value="verySatisfactory" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_3" value="didNotMeet" data-type="coi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">4</span>
+                    <span class="indicator-text">1.4.3 Evaluate with colleagues the effectiveness of teaching strategies that promote learner achievement in literacy and numeracy. <span class="tag-coi">[COI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_4" value="outstanding" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_4" value="verySatisfactory" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_4" value="didNotMeet" data-type="coi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">5</span>
+                    <span class="indicator-text">1.5.3 Develop and apply effective teaching strategies to promote critical and creative thinking, as well as other higher-order thinking skills. <span class="tag-coi">[COI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_5" value="outstanding" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_5" value="verySatisfactory" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_5" value="didNotMeet" data-type="coi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">6</span>
+                    <span class="indicator-text">1.6.3 Model and support colleagues in the proficient use of Mother Tongue, Filipino and English to improve teaching and learning, as well as to develop the learners' pride of their language, heritage and culture. <span class="tag-coi">[COI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_6" value="outstanding" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_6" value="verySatisfactory" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_6" value="didNotMeet" data-type="coi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">7</span>
+                    <span class="indicator-text">1.7.3 Display a wide range of effective verbal and non-verbal classroom communication strategies to support learner understanding, participation, engagement and achievement. <span class="tag-coi">[COI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_7" value="outstanding" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_7" value="verySatisfactory" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_7" value="didNotMeet" data-type="coi"></div>
+                </div>
+
+                <div class="domain-header">
+                    <h3>Domain 2. Learning Environment</h3>
+                </div>
+                <div class="indicator-table-header">
+                    <span class="header-no">No.</span>
+                    <span class="header-indicator">DOMAIN/STRAND/INDICATORS</span>
+                    <span class="header-option">Outstanding</span>
+                    <span class="header-option">Very Satisfactory</span>
+                    <span class="header-option">Did Not Meet</span>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">8</span>
+                    <span class="indicator-text">2.1.3 Exhibit effective strategies that ensure safe and secure learning environments to enhance learning through the consistent implementation of policies, guidelines and procedures. <span class="tag-coi">[COI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_8" value="outstanding" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_8" value="verySatisfactory" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_8" value="didNotMeet" data-type="coi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">9</span>
+                    <span class="indicator-text">2.2.3 Exhibit effective practices to foster learning environments that promote fairness, respect and care to encourage learning. <span class="tag-coi">[COI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_9" value="outstanding" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_9" value="verySatisfactory" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_9" value="didNotMeet" data-type="coi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">10</span>
+                    <span class="indicator-text">2.3.3 Work with colleagues to model and share effective techniques in the management of classroom structure to engage learners, individually or in groups, in meaningful exploration, discovery and hands-on activities within a range of physical learning environments. <span class="tag-coi">[COI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_10" value="outstanding" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_10" value="verySatisfactory" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_10" value="didNotMeet" data-type="coi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">11</span>
+                    <span class="indicator-text">2.4.3 Work with colleagues to share successful strategies that sustain supportive learning environments that nurture and inspire learners to participate, cooperate and collaborate in continued learning. <span class="tag-coi">[COI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_11" value="outstanding" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_11" value="verySatisfactory" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_11" value="didNotMeet" data-type="coi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">12</span>
+                    <span class="indicator-text">2.5.3 Model successful strategies and support colleagues in promoting learning environments that effectively motivate learners to work productively by assuming responsibility for their own learning. <span class="tag-coi">[COI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_12" value="outstanding" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_12" value="verySatisfactory" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_12" value="didNotMeet" data-type="coi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">13</span>
+                    <span class="indicator-text">2.6.3 Exhibit effective and constructive behavior management skills by applying positive and non-violent discipline to ensure learning-focused environments. <span class="tag-coi">[COI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_13" value="outstanding" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_13" value="verySatisfactory" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_13" value="didNotMeet" data-type="coi"></div>
+                </div>
+
+                <div class="domain-header">
+                    <h3>Domain 3. Diversity of Learners</h3>
+                </div>
+                <div class="indicator-table-header">
+                    <span class="header-no">No.</span>
+                    <span class="header-indicator">DOMAIN/STRAND/INDICATORS</span>
+                    <span class="header-option">Outstanding</span>
+                    <span class="header-option">Very Satisfactory</span>
+                    <span class="header-option">Did Not Meet</span>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">14</span>
+                    <span class="indicator-text">3.1.3 Work with colleagues to share differentiated, developmentally appropriate opportunities to address learners' differences in gender, needs, strengths, interests and experiences. <span class="tag-coi">[COI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_14" value="outstanding" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_14" value="verySatisfactory" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_14" value="didNotMeet" data-type="coi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">15</span>
+                    <span class="indicator-text">3.2.3 Exhibit a learner-centered culture that promotes success by using effective teaching strategies that respond to learners' linguistic, cultural, socio-economic and religious backgrounds. <span class="tag-coi">[COI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_15" value="outstanding" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_15" value="verySatisfactory" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_15" value="didNotMeet" data-type="coi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">16</span>
+                    <span class="indicator-text">3.3.3 Assist colleagues to design, adapt and implement teaching strategies that are responsive to learners with disabilities, giftedness and talents. <span class="tag-coi">[COI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_16" value="outstanding" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_16" value="verySatisfactory" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_16" value="didNotMeet" data-type="coi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">17</span>
+                    <span class="indicator-text">3.4.3 Evaluate with colleagues teaching strategies that are responsive to the special educational needs of learners in difficult circumstances, including: geographic isolation; chronic illness; displacement due to armed conflict, urban resettlement or disasters; child abuse and child labor practices. <span class="tag-coi">[COI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_17" value="outstanding" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_17" value="verySatisfactory" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_17" value="didNotMeet" data-type="coi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">18</span>
+                    <span class="indicator-text">3.5.3 Develop and apply teaching strategies to address effectively the needs of learners from indigenous groups. <span class="tag-coi">[COI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_18" value="outstanding" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_18" value="verySatisfactory" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_18" value="didNotMeet" data-type="coi"></div>
+                </div>
+
+                <div class="domain-header">
+                    <h3>Domain 4. Curriculum and Planning</h3>
+                </div>
+                <div class="indicator-table-header">
+                    <span class="header-no">No.</span>
+                    <span class="header-indicator">DOMAIN/STRAND/INDICATORS</span>
+                    <span class="header-option">Outstanding</span>
+                    <span class="header-option">Very Satisfactory</span>
+                    <span class="header-option">Did Not Meet</span>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">19</span>
+                    <span class="indicator-text">4.1.3 Develop and apply effective strategies in the planning and management of developmentally sequenced teaching and learning processes to meet curriculum requirements and varied teaching contexts. <span class="tag-coi">[COI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_19" value="outstanding" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_19" value="verySatisfactory" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_19" value="didNotMeet" data-type="coi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">20</span>
+                    <span class="indicator-text">4.2.3 Model to colleagues the setting of achievable and challenging learning outcomes that are aligned with learning competencies to cultivate a culture of excellence for all learners. <span class="tag-ncoi">[NCOI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_20" value="outstanding" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_20" value="verySatisfactory" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_20" value="didNotMeet" data-type="ncoi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">21</span>
+                    <span class="indicator-text">4.3.3 Work collaboratively with colleagues to evaluate the design of learning programs that develop the knowledge and skills of learners at different ability levels. <span class="tag-ncoi">[NCOI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_21" value="outstanding" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_21" value="verySatisfactory" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_21" value="didNotMeet" data-type="ncoi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">22</span>
+                    <span class="indicator-text">4.4.3 Review with colleagues, teacher and learner feedback to plan, facilitate, and enrich teaching practice. <span class="tag-ncoi">[NCOI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_22" value="outstanding" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_22" value="verySatisfactory" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_22" value="didNotMeet" data-type="ncoi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">23</span>
+                    <span class="indicator-text">4.5.3 Advise and guide colleagues in the selection, organization, development and use of appropriate teaching and learning resources, including ICT, to address specific learning goals. <span class="tag-coi">[COI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_23" value="outstanding" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_23" value="verySatisfactory" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_23" value="didNotMeet" data-type="coi"></div>
+                </div>
+
+                <div class="domain-header">
+                    <h3>Domain 5. Assessment and Reporting</h3>
+                </div>
+                <div class="indicator-table-header">
+                    <span class="header-no">No.</span>
+                    <span class="header-indicator">DOMAIN/STRAND/INDICATORS</span>
+                    <span class="header-option">Outstanding</span>
+                    <span class="header-option">Very Satisfactory</span>
+                    <span class="header-option">Did Not Meet</span>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">24</span>
+                    <span class="indicator-text">5.1.3 Work collaboratively with colleagues to review the design, selection, organization and use of a range of effective diagnostic, formative and summative assessment strategies consistent with curriculum requirements. <span class="tag-coi">[COI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_24" value="outstanding" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_24" value="verySatisfactory" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_24" value="didNotMeet" data-type="coi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">25</span>
+                    <span class="indicator-text">5.2.3 Interpret collaboratively monitoring and evaluation strategies of attainment data to support learner progress and achievement. <span class="tag-ncoi">[NCOI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_25" value="outstanding" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_25" value="verySatisfactory" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_25" value="didNotMeet" data-type="ncoi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">26</span>
+                    <span class="indicator-text">5.3.3 Use effective strategies for providing timely, accurate and constructive feedback to encourage learners to reflect on and improve their own learning. <span class="tag-coi">[COI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_26" value="outstanding" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_26" value="verySatisfactory" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_26" value="didNotMeet" data-type="coi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">27</span>
+                    <span class="indicator-text">5.4.3 Apply skills in the effective communication of learner needs, progress and achievement to key stakeholders, including parents/guardians. <span class="tag-ncoi">[NCOI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_27" value="outstanding" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_27" value="verySatisfactory" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_27" value="didNotMeet" data-type="ncoi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">28</span>
+                    <span class="indicator-text">5.5.3 Work collaboratively with colleagues to analyze and utilize assessment data to modify practices and programs to further support learner progress and achievement. <span class="tag-ncoi">[NCOI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_28" value="outstanding" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_28" value="verySatisfactory" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_28" value="didNotMeet" data-type="ncoi"></div>
+                </div>
+
+                <div class="domain-header">
+                    <h3>Domain 6. Community Linkages and Professional Engagement</h3>
+                </div>
+                <div class="indicator-table-header">
+                    <span class="header-no">No.</span>
+                    <span class="header-indicator">DOMAIN/STRAND/INDICATORS</span>
+                    <span class="header-option">Outstanding</span>
+                    <span class="header-option">Very Satisfactory</span>
+                    <span class="header-option">Did Not Meet</span>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">29</span>
+                    <span class="indicator-text">6.1.3 Reflect on and evaluate learning environments that are responsive to community contexts. <span class="tag-ncoi">[NCOI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_29" value="outstanding" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_29" value="verySatisfactory" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_29" value="didNotMeet" data-type="ncoi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">30</span>
+                    <span class="indicator-text">6.2.3 Guide colleagues to strengthen relationships with parents/guardians and the wider school community to maximize their involvement in the educative process. <span class="tag-ncoi">[NCOI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_30" value="outstanding" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_30" value="verySatisfactory" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_30" value="didNotMeet" data-type="ncoi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">31</span>
+                    <span class="indicator-text">6.3.3 Discuss with colleagues teaching and learning practices that apply existing codes, laws and regulations applicable to the teaching profession, and the responsibilities specified in the Code of Ethics for Professional Teachers. <span class="tag-ncoi">[NCOI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_31" value="outstanding" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_31" value="verySatisfactory" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_31" value="didNotMeet" data-type="ncoi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">32</span>
+                    <span class="indicator-text">6.4.3 Exhibit commitment to and support teachers in the implementation of school policies and procedures to foster harmonious relationships with learners, parents and other stakeholders. <span class="tag-ncoi">[NCOI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_32" value="outstanding" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_32" value="verySatisfactory" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio"
+ name="indicator_32" value="didNotMeet" data-type="ncoi"></div>
+                </div>
+
+                <div class="domain-header">
+                    <h3>Domain 7. Personal Growth and Professional Development</h3>
+                </div>
+                <div class="indicator-table-header">
+                    <span class="header-no">No.</span>
+                    <span class="header-indicator">DOMAIN/STRAND/INDICATORS</span>
+                    <span class="header-option">Outstanding</span>
+                    <span class="header-option">Very Satisfactory</span>
+                    <span class="header-option">Did Not Meet</span>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">33</span>
+                    <span class="indicator-text">7.1.3 Manifest a learner-centered teaching philosophy in various aspects of practice and support colleagues in enhancing their own learner-centered teaching philosophy. <span class="tag-ncoi">[NCOI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_33" value="outstanding" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_33" value="verySatisfactory" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_33" value="didNotMeet" data-type="ncoi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">34</span>
+                    <span class="indicator-text">7.2.3 Identify and utilize personal professional strengths to uphold the dignity of teaching as a profession to build a positive teaching and learning culture within the school. <span class="tag-ncoi">[NCOI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_34" value="outstanding" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_34" value="verySatisfactory" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_34" value="didNotMeet" data-type="ncoi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">35</span>
+                    <span class="indicator-text">7.3.3 Contribute actively to professional networks within and between schools to improve knowledge and to enhance practice. <span class="tag-ncoi">[NCOI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_35" value="outstanding" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_35" value="verySatisfactory" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_35" value="didNotMeet" data-type="ncoi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">36</span>
+                    <span class="indicator-text">7.4.3 Initiate professional reflections and promote learning opportunities with colleagues to improve practice. <span class="tag-ncoi">[NCOI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_36" value="outstanding" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_36" value="verySatisfactory" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_36" value="didNotMeet" data-type="ncoi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">37</span>
+                    <span class="indicator-text">7.5.3 Reflect on the Philippine Professional Standards for Teachers to plan personal professional development goals and assist colleagues in planning and achieving their own goals. <span class="tag-ncoi">[NCOI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_37" value="outstanding" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_37" value="verySatisfactory" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_37" value="didNotMeet" data-type="ncoi"></div>
+                </div>              
+            </form>
+        </section>
+
+        <!-- SECTION 3: MT IV - V -->
+        <section id="rftp-mt-iv-v" class="assessment-section hidden">
+            <h2 class="assessment-title">Summary of the Achievement of PPST Indicators</h2>
+            <p class="assessment-subtitle">RFTP (MT IV–V)</p>
+            <form id="assessment-form-mt2">
+                <div class="domain-header">
+                    <h3>Domain 1. Content Knowledge and Pedagogy</h3>
+                </div>
+                <div class="indicator-table-header">
+                    <span class="header-no">No.</span>
+                    <span class="header-indicator">DOMAIN/STRAND/INDICATORS</span>
+                    <span class="header-option">Outstanding</span>
+                    <span class="header-option">Very Satisfactory</span>
+                    <span class="header-option">Did Not Meet</span>
+                </div>
+
+                <div class="indicator-row">
+                    <span class="no">1</span>
+                    <span class="indicator-text">1.1.4 Model exemplary practice to improve the applications of content knowledge within and across curriculum teaching areas. <span class="tag-coi">[COI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_1" value="outstanding" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_1" value="verySatisfactory" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_1" value="didNotMeet" data-type="coi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">2</span>
+                    <span class="indicator-text">1.2.4 Lead colleagues in the advancement of the art and science of teaching based on their comprehensive knowledge of research and pedagogy. <span class="tag-ncoi">[NCOI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_2" value="outstanding" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_2" value="verySatisfactory" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_2" value="didNotMeet" data-type="ncoi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">3</span>
+                    <span class="indicator-text">1.3.4 Mentor colleagues in the implementation of policies to ensure the positive use of ICT within or beyond the school. <span class="tag-coi">[COI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_3" value="outstanding" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_3" value="verySatisfactory" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_3" value="didNotMeet" data-type="coi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">4</span>
+                    <span class="indicator-text">1.4.4 Model a comprehensive selection of effective teaching strategies that promote learner achievement in literacy and numeracy. <span class="tag-coi">[COI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_4" value="outstanding" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_4" value="verySatisfactory" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_4" value="didNotMeet" data-type="coi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">5</span>
+                    <span class="indicator-text">1.5.4 Lead colleagues in reviewing, modifying and expanding their range of teaching strategies that promote critical and creative thinking, as well as other higher-order thinking kills. <span class="tag-coi">[COI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_5" value="outstanding" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_5" value="verySatisfactory" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_5" value="didNotMeet" data-type="coi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">6</span>
+                    <span class="indicator-text">1.6.4 Show exemplary skills in and advocate the use of Mother Tongue, Filipino and English in teaching and learning to facilitate the learners' language, cognitive and academic development and to foster pride of their language, heritage and culture. <span class="tag-coi">[COI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_6" value="outstanding" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_6" value="verySatisfactory" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_6" value="didNotMeet" data-type="coi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">7</span>
+                    <span class="indicator-text">1.7.4 Exhibit exemplary practice in the use of effective verbal and on-verbal classroom communication strategies to support learner understanding, participation, engagement and achievement in different learning contexts. <span class="tag-coi">[COI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_7" value="outstanding" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_7" value="verySatisfactory" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_7" value="didNotMeet" data-type="coi"></div>
+                </div>
+
+                <div class="domain-header">
+                    <h3>Domain 2. Learning Environment</h3>
+                </div>
+                <div class="indicator-table-header">
+                    <span class="header-no">No.</span>
+                    <span class="header-indicator">DOMAIN/STRAND/INDICATORS</span>
+                    <span class="header-option">Outstanding</span>
+                    <span class="header-option">Very Satisfactory</span>
+                    <span class="header-option">Did Not Meet</span>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">8</span>
+                    <span class="indicator-text">2.1.4 Apply comprehensive knowledge of, and act as a resource person for, policies, guidelines and procedures that relate to the implementation of safe and secure learning environments for learners. <span class="tag-coi">[COI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_8" value="outstanding" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_8" value="verySatisfactory" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_8" value="didNotMeet" data-type="coi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">9</span>
+                    <span class="indicator-text">2.2.4 Advocate and facilitate the use of effective practices to foster learning environments that promote fairness, respect and care to encourage learning. <span class="tag-coi">[COI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_9" value="outstanding" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_9" value="verySatisfactory" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_9" value="didNotMeet" data-type="coi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">10</span>
+                    <span class="indicator-text">2.3.4 Model exemplary practices in the management of classroom structure and activities, and lead colleagues at the whole-school level to review and evaluate their practices. <span class="tag-coi">[COI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_10" value="outstanding" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_10" value="verySatisfactory" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_10" value="didNotMeet" data-type="coi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">11</span>
+                    <span class="indicator-text">2.4.4 Facilitate processes to review the effectiveness of the school's learning environment to nurture and inspire learner participation. <span class="tag-coi">[COI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_11" value="outstanding" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_11" value="verySatisfactory" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_11" value="didNotMeet" data-type="coi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">12</span>
+                    <span class="indicator-text">2.5.4 Lead and empower colleagues in promoting learning environments that effectively motivate learners to achieve quality outcomes by assuming responsibility for their own learning. <span class="tag-coi">[COI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_12" value="outstanding" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_12" value="verySatisfactory" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_12" value="didNotMeet" data-type="coi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">13</span>
+                    <span class="indicator-text">2.6.4 Provide leadership in applying a wide range of strategies in the implementation of positive and non-violent discipline policies/ procedures to ensure learning-focused environments. <span class="tag-coi">[COI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_13" value="outstanding" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_13" value="verySatisfactory" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_13" value="didNotMeet" data-type="coi"></div>
+                </div>
+
+                <div class="domain-header">
+                    <h3>Domain 3. Diversity of Learners</h3>
+                </div>
+                <div class="indicator-table-header">
+                    <span class="header-no">No.</span>
+                    <span class="header-indicator">DOMAIN/STRAND/INDICATORS</span>
+                    <span class="header-option">Outstanding</span>
+                    <span class="header-option">Very Satisfactory</span>
+                    <span class="header-option">Did Not Meet</span>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">14</span>
+                    <span class="indicator-text">3.1.4 Lead colleagues to evaluate differentiated strategies to enrich teaching practices that address learners' differences in gender, needs, strengths, interests and experiences. <span class="tag-coi">[COI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_14" value="outstanding" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_14" value="verySatisfactory" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_14" value="didNotMeet" data-type="coi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">15</span>
+                    <span class="indicator-text">3.2.4 Model exemplary teaching practices that recognize and affirm diverse linguistic, cultural, socio economic and religious backgrounds to promote learner success. <span class="tag-coi">[COI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_15" value="outstanding" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_15" value="verySatisfactory" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_15" value="didNotMeet" data-type="coi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">16</span>
+                    <span class="indicator-text">3.3.4 Lead colleagues in designing, adapting and implementing teaching strategies that are responsive to learners with disabilities, giftedness and talents. <span class="tag-coi">[COI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_16" value="outstanding" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_16" value="verySatisfactory" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_16" value="didNotMeet" data-type="coi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">17</span>
+                    <span class="indicator-text">3.4.4 Model a range of high level skills responsive to the special educational needs of learners in difficult circumstances, including: geographic isolation; chronic illness; displacement due to armed conflict, urban resettlement or disasters; child abuse and child labor practices. <span class="tag-coi">[COI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_17" value="outstanding" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_17" value="verySatisfactory" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_17" value="didNotMeet" data-type="coi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">18</span>
+                    <span class="indicator-text">3.5.4 Show comprehensive skills in delivering culturally appropriate teaching strategies to address effectively the needs of learners from indigenous groups. <span class="tag-coi">[COI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_18" value="outstanding" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_18" value="verySatisfactory" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_18" value="didNotMeet" data-type="coi"></div>
+                </div>
+
+                <div class="domain-header">
+                    <h3>Domain 4. Curriculum and Planning</h3>
+                </div>
+                <div class="indicator-table-header">
+                    <span class="header-no">No.</span>
+                    <span class="header-indicator">DOMAIN/STRAND/INDICATORS</span>
+                    <span class="header-option">Outstanding</span>
+                    <span class="header-option">Very Satisfactory</span>
+                    <span class="header-option">Did Not Meet</span>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">19</span>
+                    <span class="indicator-text">4.1.4 Model exemplary practice and lead colleagues in enhancing current practices in the planning and management of developmentally sequenced teaching and learning processes. <span class="tag-coi">[COI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_19" value="outstanding" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_19" value="verySatisfactory" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_19" value="didNotMeet" data-type="coi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">20</span>
+                    <span class="indicator-text">4.2.4 Exhibit high-level skills and lead in setting achievable and challenging learning outcomes that are aligned with learning competencies towards the cultivation of a culture of excellence for all. <span class="tag-ncoi">[NCOI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_20" value="outstanding" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_20" value="verySatisfactory" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_20" value="didNotMeet" data-type="ncoi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">21</span>
+                    <span class="indicator-text">4.3.4 Provide advice on the design and implementation of relevant and responsive learning programs that develop the knowledge and skills of learners at different ability levels. <span class="tag-ncoi">[NCOI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_21" value="outstanding" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_21" value="verySatisfactory" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_21" value="didNotMeet" data-type="ncoi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">22</span>
+                    <span class="indicator-text">4.4.4 Lead colleagues in professional discussions to plan and implement strategies that enrich teaching practice. <span class="tag-ncoi">[NCOI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_22" value="outstanding" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_22" value="verySatisfactory" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_22" value="didNotMeet" data-type="ncoi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">23</span>
+                    <span class="indicator-text">4.5.4 Model exemplary skills and lead colleagues in the development and evaluation of teaching and learning resources, including ICT, for use within and beyond the school. <span class="tag-coi">[COI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_23" value="outstanding" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_23" value="verySatisfactory" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_23" value="didNotMeet" data-type="coi"></div>
+                </div>
+
+                <div class="domain-header">
+                    <h3>Domain 5. Assessment and Reporting</h3>
+                </div>
+                <div class="indicator-table-header">
+                    <span class="header-no">No.</span>
+                    <span class="header-indicator">DOMAIN/STRAND/INDICATORS</span>
+                    <span class="header-option">Outstanding</span>
+                    <span class="header-option">Very Satisfactory</span>
+                    <span class="header-option">Did Not Meet</span>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">24</span>
+                    <span class="indicator-text">5.1.4 Lead initiatives in the evaluation of assessment policies and guidelines that relate to the design, selection, organization and use of effective diagnostic, formative and summative assessment strategies consistent with curriculum requirements. <span class="tag-coi">[COI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_24" value="outstanding" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_24" value="verySatisfactory" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_24" value="didNotMeet" data-type="coi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">25</span>
+                    <span class="indicator-text">5.2.4 Provide advice on and mentor colleagues in the effective analysis and use of learner attainment data. <span class="tag-ncoi">[NCOI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_25" value="outstanding" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_25" value="verySatisfactory" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_25" value="didNotMeet" data-type="ncoi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">26</span>
+                    <span class="indicator-text">5.3.4 Exhibit exemplary skills and lead initiatives to support colleagues in applying strategies that effectively provide timely, accurate and constructive feedback to learners to improve learning achievement. <span class="tag-coi">[COI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_26" value="outstanding" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_26" value="verySatisfactory" data-type="coi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_26" value="didNotMeet" data-type="coi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">27</span>
+                    <span class="indicator-text">5.4.4 Share with colleagues a wide range of strategies that ensure effective communication of learner needs, progress and achievement to key stakeholders, including parents/ guardians. <span class="tag-ncoi">[NCOI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_27" value="outstanding" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_27" value="verySatisfactory" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_27" value="didNotMeet" data-type="ncoi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">28</span>
+                    <span class="indicator-text">5.5.4 Lead colleagues to explore, design and implement effective practices and programs using information derived from assessment data. <span class="tag-ncoi">[NCOI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_28" value="outstanding" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_28" value="verySatisfactory" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_28" value="didNotMeet" data-type="ncoi"></div>
+                </div>
+
+                <div class="domain-header">
+                    <h3>Domain 6. Community Linkages and Professional Engagement</h3>
+                </div>
+                <div class="indicator-table-header">
+                    <span class="header-no">No.</span>
+                    <span class="header-indicator">DOMAIN/STRAND/INDICATORS</span>
+                    <span class="header-option">Outstanding</span>
+                    <span class="header-option">Very Satisfactory</span>
+                    <span class="header-option">Did Not Meet</span>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">29</span>
+                    <span class="indicator-text">6.1.4 Model exemplary practice and empower colleagues to establish and maintain effective learning environments that are responsive to community contexts. <span class="tag-ncoi">[NCOI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_29" value="outstanding" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_29" value="verySatisfactory" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_29" value="didNotMeet" data-type="ncoi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">30</span>
+                    <span class="indicator-text">6.2.4 Lead in consolidating networks that strengthen relationships with parents/guardians and the wider school community to maximize their involvement in the educative process. <span class="tag-ncoi">[NCOI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_30" value="outstanding" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_30" value="verySatisfactory" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_30" value="didNotMeet" data-type="ncoi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">31</span>
+                    <span class="indicator-text">6.3.4 Lead colleagues in the regular review of existing codes, laws and regulations that apply to the teaching profession, and the responsibilities as specified in the Code of Ethics for Professional Teachers. <span class="tag-ncoi">[NCOI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_31" value="outstanding" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_31" value="verySatisfactory" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_31" value="didNotMeet" data-type="ncoi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">32</span>
+                    <span class="indicator-text">6.4.4 Evaluate existing school policies and procedures to make them more responsive to the needs of the learners, parents and other stakeholders. <span class="tag-ncoi">[NCOI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_32" value="outstanding" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_32" value="verySatisfactory" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio"
+ name="indicator_32" value="didNotMeet" data-type="ncoi"></div>
+                </div>
+
+                <div class="domain-header">
+                    <h3>Domain 7. Personal Growth and Professional Development</h3>
+                </div>
+                <div class="indicator-table-header">
+                    <span class="header-no">No.</span>
+                    <span class="header-indicator">DOMAIN/STRAND/INDICATORS</span>
+                    <span class="header-option">Outstanding</span>
+                    <span class="header-option">Very Satisfactory</span>
+                    <span class="header-option">Did Not Meet</span>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">33</span>
+                    <span class="indicator-text">7.1.4 Model a learner-centered teaching philosophy through teaching practices that stimulate colleagues to engage in further professional learning. <span class="tag-ncoi">[NCOI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_33" value="outstanding" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_33" value="verySatisfactory" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_33" value="didNotMeet" data-type="ncoi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">34</span>
+                    <span class="indicator-text">7.2.4 Act as a role model and advocate for upholding the dignity of teaching as a profession to build a positive teaching and learning culture within and beyond the school. <span class="tag-ncoi">[NCOI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_34" value="outstanding" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_34" value="verySatisfactory" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_34" value="didNotMeet" data-type="ncoi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">35</span>
+                    <span class="indicator-text">7.3.4 Take a leadership role in supporting colleagues' engagement with professional networks within and across schools to advance knowledge and practice in identified areas of need. <span class="tag-ncoi">[NCOI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_35" value="outstanding" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_35" value="verySatisfactory" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_35" value="didNotMeet" data-type="ncoi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">36</span>
+                    <span class="indicator-text">7.4.4. Demonstrate leadership within and across school contexts in critically evaluating practice and setting clearly defined targets for professional development. <span class="tag-ncoi">[NCOI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_36" value="outstanding" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_36" value="verySatisfactory" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_36" value="didNotMeet" data-type="ncoi"></div>
+                </div>
+                <div class="indicator-row">
+                    <span class="no">37</span>
+                    <span class="indicator-text">7.5.4 Lead reforms in enhancing professional development programs based on an in-depth knowledge and understanding of the Philippine Professional Standards for Teachers. <span class="tag-ncoi">[NCOI]</span></span>
+                    <div class="radio-cell"><input type="radio" name="indicator_37" value="outstanding" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_37" value="verySatisfactory" data-type="ncoi"></div>
+                    <div class="radio-cell"><input type="radio" name="indicator_37" value="didNotMeet" data-type="ncoi"></div>
+                </div>              
+
+            </form>
+        </section>
+
+        <section class="result-section">
+            <button id="show-result-btn" class="btn btn-purple">CLICK HERE TO DISPLAY THE RESULT</button>
+            
+            <div id="result-container" class="hidden">
+                <h3>Result:</h3>
+                <p><strong>Current Position :</strong> <span id="result-current-pos"></span></p>
+                <p><strong>Applied for:</strong> <span id="result-applied-pos"></span></p>
+                <p class="summary-line">
+                    <strong>COI(Outstanding) :</strong> <span id="result-coi-o">0</span> |
+                    <strong>COI(Very Satisfactory) :</strong> <span id="result-coi-vs">0</span> |
+                    <strong>NCOI(Outstanding) :</strong> <span id="result-ncoi-o">0</span> |
+                    <strong>NCOI(Very Satisfactory) :</strong> <span id="result-ncoi-vs">0</span>
+                </p>
+
+                <div class="remarks-table">
+                    <div class="remarks-header">
+                        <span>Position Applied</span>
+                        <span>Remarks</span>
+                    </div>
+                    <div class="remarks-row">
+                        <span id="remarks-position"></span>
+                        <span id="remarks-text"></span>
+                    </div>
+                </div>
+            </div>
+
+            <button id="reload-btn" class="btn btn-blue">New Entry / Reload Page</button>
+        </section>
+    </div>
+
+    <!-- Script to show correct RFTP section based on the applied-position select -->
+    <script>
+    (function(){
+        const teacherGroup = new Set(['Teacher II','Teacher III','Teacher IV','Teacher V','Teacher VI','Teacher VII']);
+        const mtGroup1 = new Set(['Master Teacher I','Master Teacher II','Master Teacher III']);
+        const mtGroup2 = new Set(['Master Teacher IV','Master Teacher V']);
+
+        const sections = {
+            teacher: document.getElementById('rftp-teacher'),
+            mt1: document.getElementById('rftp-mt-i-iii'),
+            mt2: document.getElementById('rftp-mt-iv-v')
+        };
+
+        const appliedSel = document.getElementById('applied-position');
+
+        function hideAll() {
+            Object.values(sections).forEach(s => { if (s) s.classList.add('hidden'); });
+        }
+
+        function updateSections() {
+            const val = appliedSel.value;
+            hideAll();
+            if (!val) return;
+            if (teacherGroup.has(val)) sections.teacher.classList.remove('hidden');
+            else if (mtGroup1.has(val)) sections.mt1.classList.remove('hidden');
+            else if (mtGroup2.has(val)) sections.mt2.classList.remove('hidden');
+        }
+
+        appliedSel.addEventListener('change', updateSections);
+        // in case of back/forward navigation or pre-selected value
+        document.addEventListener('DOMContentLoaded', updateSections);
+    })();
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,286 @@
+/* --- Global Styles & Variables --- */
+:root {
+    --bg-dark: #234C6A;        /* page background: navy (updated) */
+    --bg-card: #E3E3E3;        /* card/background panels: white */
+    --text-primary: #0f1724;   /* primary text: dark slate */
+    --text-secondary: #083b75; /* accent headings: calm blue */
+    --text-secondary-hover: #1c5da8; /* accent headings hover: brighter blue */
+    --text-green: #065f46;     /* result/positive text: deep teal/green */
+    --border-color: #e6eef6;   /* subtle borders */
+    --btn-purple: #6d28d9;     /* button accent (soft violet) */
+    --btn-purple-hover: #7c3aed;
+    --btn-blue: #016B61;       /* primary action button (blue) */
+    --btn-blue-hover: #0f9c8e;
+    --result-bg: #234C6A;      /* result panel bg: pale mint */
+    --radio-empty: #456882;    /* radio outline: soft gray-blue */
+    --radio-selected: #0ea5a4; /* radio selected: teal */
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-primary);
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--bg-card);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+h1, h2, h3, label {
+    color: var(--text-secondary);
+    font-weight: 600;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+header p {
+    text-align: center;
+    margin-top: 0;
+    font-size: 1.1rem;
+    color: var(--text-primary);
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+/* --- Config Section (Dropdowns) --- */
+.config-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    background-color: var(--bg-dark);
+    border-radius: 8px;
+}
+
+.dropdown-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-group label {
+    margin-bottom: 8px;
+    font-size: 1.0rem;
+    color: #ffffff;  /* lighter text color */
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--bg-card);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+/* --- Assessment Section (Indicators) --- */
+.assessment-title {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.assessment-subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--text-primary);
+    margin-top: -15px;
+    margin-bottom: 25px;
+}
+
+.domain-header {
+    background-color: var(--bg-dark);
+    padding: 10px 15px;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+
+.domain-header h3 {
+    margin: 0;
+    color: #ffffff;  /* lighter text color */
+}
+
+.indicator-table-header,
+.indicator-row {
+    display: grid;
+    grid-template-columns: 50px 1fr 120px 120px 120px;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.indicator-table-header {
+    font-weight: bold;
+    color: var(--text-primary);
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.header-indicator {
+    text-align: left;
+}
+
+.indicator-row {
+    background-color: var(--bg-card);
+}
+.indicator-row:hover {
+    background-color: #d0d0d0;
+}
+
+.no {
+    text-align: center;
+    color: var(--text-secondary);
+}
+
+.indicator-text {
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.tag-coi {
+    color: #3b82f6; /* Blue */
+    font-weight: bold;
+}
+
+.tag-ncoi {
+    color: #34d399; /* Green */
+    font-weight: bold;
+}
+
+/* Custom Radio Buttons */
+.radio-cell {
+    text-align: center;
+}
+
+input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--radio-empty);
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.2s;
+}
+
+input[type="radio"]:checked {
+    background-color: #456882;
+    border-color: #456882;
+    box-shadow: 0 0 0 3px var(--bg-card), 0 0 0 5px #456882;
+    width: 18px;
+    height: 18px;
+    border-width: 3px;
+}
+
+/* --- Result Section --- */
+.result-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.btn {
+    padding: 15px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-purple {
+    background-color: var(--text-secondary);
+}
+.btn-purple:hover {
+    background-color: var(--text-secondary-hover);
+}
+
+.btn-blue {
+    background-color: var(--btn-blue);
+}
+.btn-blue:hover {
+    background-color: var(--btn-blue-hover);
+}
+
+#result-container {
+    background-color: var(--result-bg);
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #3c9a62;
+}
+
+#result-container h3 {
+    color: #ffffff;
+    font-size: 1.3rem;
+    margin-top: 0;
+}
+
+#result-container p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    color: #ffffff;
+}
+
+.summary-line {
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.summary-line strong {
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+.remarks-table {
+    margin-top: 20px;
+    border: 1px solid var(--text-green);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.remarks-header, .remarks-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.remarks-header {
+    background-color: rgba(0,0,0,0.2);
+    font-weight: bold;
+}
+
+.remarks-header span, .remarks-row span {
+    padding: 10px;
+}
+
+.remarks-row span {
+    border-top: 1px solid var(--text-green);
+    white-space: pre-line; /* This handles multi-line remarks */
+}
+
+.remarks-row span:first-child {
+    border-right: 1px solid var(--text-green);
+}
