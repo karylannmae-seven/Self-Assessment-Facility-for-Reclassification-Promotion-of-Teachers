@@ -13,8 +13,37 @@
 </head>
 <body>
 
+    <!-- TOP HEADER -->
+    <header class="top-header">
+        <div class="header-top-row">
+            <div class="logo-section">
+                <img src="school-seal.png" alt="School Seal Logo" class="deped-logo">
+                <div class="logo-text">
+                    <h2>Dapa Central Elementary School and SPED Center-SSES</h2>
+                    <p>Department of Education - Siargao Division</p>
+                </div>
+            </div>
+            <div class="header-stats">
+                <div class="time-display">
+                    <span class="time-label">Current Time:</span>
+                    <span id="current-time" class="time-value">--:--:--</span>
+                </div>
+                <div class="user-counter">
+                    <span class="counter-label">Users Today:</span>
+                    <span id="user-count" class="counter-value">1</span>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom-row">
+            <div class="header-center">
+                <h1>Teacher Reclassification Assessment System</h1>
+                <p class="purpose-text">(Designed to evaluate teachers’ performance using PPST indicators and automatically verify eligibility for reclassification and career progression.)</p>
+            </div>
+        </div>
+    </header>
+
     <div class="container">
-        <header>
+        <header class="page-header">
             <h1>Self-Assessment Facility</h1>
             <p>Summary of the Achievement of PPST Indicators for Reclassification of Teachers</p>
         </header>
@@ -1094,18 +1123,56 @@
         </section>
 
         <section class="result-section">
-            <button id="show-result-btn" class="btn btn-purple">CLICK HERE TO DISPLAY THE RESULT</button>
+            <button id="show-result-btn" class="btn btn-purple">GENERATE ASSESSMENT REPORT</button>
             
             <div id="result-container" class="hidden">
                 <h3>Result:</h3>
                 <p><strong>Current Position :</strong> <span id="result-current-pos"></span></p>
                 <p><strong>Applied for:</strong> <span id="result-applied-pos"></span></p>
-                <p class="summary-line">
-                    <strong>COI(Outstanding) :</strong> <span id="result-coi-o">0</span> |
-                    <strong>COI(Very Satisfactory) :</strong> <span id="result-coi-vs">0</span> |
-                    <strong>NCOI(Outstanding) :</strong> <span id="result-ncoi-o">0</span> |
-                    <strong>NCOI(Very Satisfactory) :</strong> <span id="result-ncoi-vs">0</span>
-                </p>
+                
+                <h4 class="section-title">Performance Requirements for the Position Applied For</h4>
+                
+                <div class="summary-card">
+                    <div class="summary-item">
+                        <span class="summary-label">COI (OUTSTANDING)</span>
+                        <span class="summary-value" id="req-coi-o">0</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-label">COI (VERY SATISFACTORY)</span>
+                        <span class="summary-value" id="req-coi-vs">0</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-label">NCOI (OUTSTANDING)</span>
+                        <span class="summary-value" id="req-ncoi-o">0</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-label">NCOI (VERY SATISFACTORY)</span>
+                        <span class="summary-value" id="req-ncoi-vs">0</span>
+                    </div>
+                </div>
+
+                <hr style="border: none; border-top: 1px solid rgba(255,255,255,0.2); margin: 20px 0;">
+
+                <h4 class="section-title">Assessment Results based on Applicant Indicators Achieved</h4>
+
+                <div class="summary-card">
+                    <div class="summary-item">
+                        <span class="summary-label">COI (OUTSTANDING)</span>
+                        <span class="summary-value" id="result-coi-o">0</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-label">COI (VERY SATISFACTORY)</span>
+                        <span class="summary-value" id="result-coi-vs">0</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-label">NCOI (OUTSTANDING)</span>
+                        <span class="summary-value" id="result-ncoi-o">0</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-label">NCOI (VERY SATISFACTORY)</span>
+                        <span class="summary-value" id="result-ncoi-vs">0</span>
+                    </div>
+                </div>
 
                 <div class="remarks-table">
                     <div class="remarks-header">
@@ -1119,14 +1186,34 @@
                 </div>
             </div>
 
-            <button id="reload-btn" class="btn btn-blue">New Entry / Reload Page</button>
+            <div class="result-actions">
+                <button id="modify-btn" class="btn btn-secondary hidden">MODIFY ASSESSMENT</button>
+                <button id="reload-btn" class="btn btn-blue">CLEAR AND RESET FORM</button>
+            </div>
         </section>
+    </div>
+
+    <!-- VALIDATION MODAL -->
+    <div id="validation-modal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Incomplete Assessment</h2>
+                <button class="modal-close" id="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p class="modal-message">The following fields need to be completed:</p>
+                <ul id="modal-errors" class="error-list"></ul>
+            </div>
+            <div class="modal-footer">
+                <button id="modal-ok-btn" class="btn btn-purple">OK, I'll Complete the Form</button>
+            </div>
+        </div>
     </div>
 
     <!-- Script to show correct RFTP section based on the applied-position select -->
     <script>
     (function(){
-        const teacherGroup = new Set(['Teacher II','Teacher III','Teacher IV','Teacher V','Teacher VI','Teacher VII']);
+        const teacherGroup = new Set(['Teacher I','Teacher II','Teacher III','Teacher IV','Teacher V','Teacher VI','Teacher VII']);
         const mtGroup1 = new Set(['Master Teacher I','Master Teacher II','Master Teacher III']);
         const mtGroup2 = new Set(['Master Teacher IV','Master Teacher V']);
 
@@ -1156,6 +1243,13 @@
         document.addEventListener('DOMContentLoaded', updateSections);
     })();
     </script>
+
+    <!-- FOOTER -->
+    <footer class="page-footer">
+        <div class="footer-content">
+            <p class="footer-text">Developed by: <span class="developer-name">Karyl Ann Mae C. Espinile - Administrative Offier II</span></p>
+        </div>
+    </footer>
 
 </body>
 </html>
