@@ -9,6 +9,11 @@
     <style>
         /* ensure sections are hidden until a position is selected */
         .hidden { display: none; }
+        /* make result remarks text white and preserve line breaks */
+        #remarks-text {
+            color: #ffffff;
+            white-space: pre-line;
+        }
     </style>
 </head>
 <body>
@@ -37,7 +42,7 @@
         <div class="header-bottom-row">
             <div class="header-center">
                 <h1>Teacher Reclassification Assessment System</h1>
-                <p class="purpose-text">(Designed to evaluate teachers’ performance using PPST indicators and automatically verify eligibility for reclassification and career progression.)</p>
+                <p class="purpose-text">(Designed to evaluate teachers’ performance using PPST indicators and automatically verify eligibility for reclassification and promotion through natural vacancy.)</p>
             </div>
         </div>
     </header>
@@ -47,6 +52,27 @@
             <h1>Self-Assessment Facility</h1>
             <p>Summary of the Achievement of PPST Indicators for Reclassification of Teachers</p>
         </header>
+
+        <!-- INFO TRIGGER BUTTON -->
+        <button id="info-btn" class="btn-info-trigger">
+            ℹ️ Important Information for Applicants — Performance Requirements &amp; ECP Transition
+        </button>
+
+        <!-- FAQ DOWNLOAD SECTION -->
+        <div class="faq-download-bar">
+            <div class="faq-download-content">
+                <div class="faq-download-info">
+                    <span class="faq-icon">📋</span>
+                    <div class="faq-text">
+                        <strong>FAQs on the Expanded Career Progression System</strong>
+                        <span>Based on DepEd Order No. 024, s. 2025 and DO 34, s. 2025</span>
+                    </div>
+                </div>
+                <a href="FAQs-on-Expanded-Career-Progression-System.pdf" download class="btn-faq-download">
+                    ⬇ Download FAQ Manual
+                </a>
+            </div>
+        </div>
 
         <section class="config-section">
             <div class="dropdown-group">
@@ -1188,9 +1214,69 @@
 
             <div class="result-actions">
                 <button id="modify-btn" class="btn btn-secondary hidden">MODIFY ASSESSMENT</button>
+                <button id="print-btn" class="btn btn-print hidden">&#128438; PRINT REPORT</button>
                 <button id="reload-btn" class="btn btn-blue">CLEAR AND RESET FORM</button>
             </div>
         </section>
+    </div>
+
+    <!-- INFO MODAL -->
+    <div id="info-modal" class="modal hidden">
+        <div class="modal-content info-modal-content">
+            <div class="modal-header info-modal-header">
+                <h2>ℹ️ Important Information for Applicants</h2>
+                <button class="modal-close" id="info-modal-close">&times;</button>
+            </div>
+            <div class="modal-body info-modal-body">
+
+                <!-- Section 1: Performance Rating Periods -->
+                <div class="info-section">
+                    <h3 class="info-section-title">📋 How Many Performance Rating Periods Are Required?</h3>
+                    <div class="info-content">
+                        <p>The number of required performance rating periods depends on the position being applied for:</p>
+                        <ul>
+                            <li><strong>When crossing a career stage</strong> (e.g., T III → T IV, T VII → MT I, MT II → MT III) — <strong>three (3) performance rating periods are required</strong> since all 37 PPST indicators must be met.</li>
+                            <li>For positions <strong>within the same career stage</strong> — <strong>one to three (1–3) rating periods</strong> may be accepted, provided the teacher meets the specific indicators required for that position.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Section 2: Repeated Indicators -->
+                <div class="info-section">
+                    <h3 class="info-section-title">🔁 Repeated PPST Indicators</h3>
+                    <div class="info-content">
+                        <p>For repeated indicators based on the three (3)-year distribution of PMES-PPST indicators, the <strong>most recent rating shall be considered</strong> for the purpose of satisfying the performance requirements for the position applied for.</p>
+                    </div>
+                </div>
+
+                <!-- Section 3: ECP 3-Year Transition -->
+                <div class="info-section info-section-highlight">
+                    <h3 class="info-section-title">📢 ECP 3-Year Transition: Performance Requirements <span class="info-do-badge">DO 34, s. 2025</span></h3>
+                    <div class="info-content">
+                        <p class="info-question">Do you have some PPST indicators that did not meet the required rating for the position you are applying for?</p>
+                        <p>You may still be considered for promotion or reclassification during the 3-year transition period, provided that:</p>
+                        <ul>
+                            <li>You meet the <strong>Qualification Standards (QS)</strong> of the position;</li>
+                            <li>Your situation falls under the conditions allowed by the <strong>ECP transition provision</strong>; and</li>
+                            <li>You commit to improving the identified PPST indicators during the current school year.</li>
+                        </ul>
+                        <div class="info-highlight-box">
+                            <p>You may include up to <strong>three (3) PPST objectives for improvement</strong> in your current IPCRF.</p>
+                            <p>A <strong>Teacher's Commitment Form</strong> may be required to document your commitment to improve these indicators.</p>
+                        </div>
+                        <div class="info-important">
+                            <p>📌 <strong>Important:</strong> This provision provides temporary flexibility on performance requirements. It does not remove the other qualification requirements for the position.</p>
+                        </div>
+                        <p class="info-transition-dates">Transition period: <strong>February 25, 2025 – February 24, 2028</strong></p>
+                        <p class="info-footer-note">📌 For further clarification and guidance on DepEd Order No. 034, s. 2025, please visit your Administrative Officer.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button id="info-modal-ok" class="btn btn-blue">I Understand</button>
+            </div>
+        </div>
     </div>
 
     <!-- VALIDATION MODAL -->
@@ -1247,7 +1333,7 @@
     <!-- FOOTER -->
     <footer class="page-footer">
         <div class="footer-content">
-            <p class="footer-text">Developed by: <span class="developer-name">Karyl Ann Mae C. Espinile - Administrative Offier II</span></p>
+            <p class="footer-text">Developed by: <span class="developer-name">Karyl Ann Mae C. Espinile - Administrative Officer II</span></p>
         </div>
     </footer>
 
