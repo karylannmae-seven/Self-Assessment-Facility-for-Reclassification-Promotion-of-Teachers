@@ -409,6 +409,12 @@ body {
         flex-direction: column;
         gap: 15px;
     }
+    .header-top-row {
+        padding: 14px 16px;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
     .logo-section {
         width: 100%;
         justify-content: center;
@@ -417,13 +423,111 @@ body {
         width: 100%;
         margin-bottom: 0;
     }
+    .header-center h1 {
+        font-size: 1.1rem;
+    }
     .header-stats {
         width: 100%;
         justify-content: center;
-        gap: 20px;
+        gap: 12px;
     }
     .config-section {
         grid-template-columns: 1fr;
+    }
+    .container {
+        padding: 16px;
+        margin: 10px;
+        border-radius: 10px;
+    }
+    h1 {
+        font-size: 1.6rem;
+    }
+    .page-header h1 {
+        font-size: 1.6rem;
+    }
+    /* Indicator table: wrap the radio cells to avoid horizontal overflow */
+    .indicator-table-header,
+    .indicator-row {
+        grid-template-columns: 36px 1fr 72px 72px 72px;
+        gap: 8px;
+        padding: 10px 8px;
+    }
+    .indicator-table-header {
+        font-size: 0.75rem;
+    }
+    .indicator-text {
+        font-size: 0.85rem;
+    }
+    input[type="radio"] {
+        width: 18px;
+        height: 18px;
+    }
+    .page-footer {
+        padding: 20px 16px;
+        margin-top: 30px;
+    }
+    .footer-text {
+        font-size: 0.9rem;
+    }
+    .footer-copyright {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-top-row {
+        padding: 10px 12px;
+    }
+    .deped-logo {
+        width: 52px;
+    }
+    .logo-text h2 {
+        font-size: 0.9rem;
+    }
+    .logo-text p {
+        font-size: 0.75rem;
+    }
+    .time-display,
+    .user-counter {
+        padding: 4px 10px;
+    }
+    .time-label,
+    .counter-label {
+        font-size: 0.7rem;
+    }
+    .time-value,
+    .counter-value {
+        font-size: 0.78rem;
+    }
+    .container {
+        padding: 12px;
+        margin: 8px;
+    }
+    h1 {
+        font-size: 1.35rem;
+    }
+    .page-header h1 {
+        font-size: 1.35rem;
+    }
+    .indicator-table-header,
+    .indicator-row {
+        grid-template-columns: 28px 1fr 60px 60px 60px;
+        gap: 4px;
+        padding: 8px 6px;
+    }
+    .indicator-table-header {
+        font-size: 0.68rem;
+    }
+    .indicator-text {
+        font-size: 0.8rem;
+    }
+    input[type="radio"] {
+        width: 16px;
+        height: 16px;
+    }
+    .btn {
+        font-size: 0.9rem;
+        padding: 13px 20px;
     }
 }
 
