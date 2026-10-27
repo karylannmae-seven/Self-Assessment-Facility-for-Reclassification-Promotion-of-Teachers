@@ -234,7 +234,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (printBtn) {
         printBtn.addEventListener('click', () => {
-            const logoSrc = 'depED-Logo.png';
+            const logoSrc = 'DepED-Logo.png';
 
             // Find the visible assessment section
             const activeSection = ['rftp-teacher', 'rftp-mt-i-iii', 'rftp-mt-iv-v']
