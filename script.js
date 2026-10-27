@@ -35,7 +35,22 @@ function initializeUserCounter() {
 document.addEventListener('DOMContentLoaded', () => {
     initializeTime();
     initializeUserCounter();
+    enableRadioDeselection();
 });
+
+// Allow clicking an already-selected radio button to deselect it
+function enableRadioDeselection() {
+    document.querySelectorAll('input[type="radio"]').forEach(radio => {
+        radio.addEventListener('mousedown', function () {
+            this._wasChecked = this.checked;
+        });
+        radio.addEventListener('click', function () {
+            if (this._wasChecked) {
+                this.checked = false;
+            }
+        });
+    });
+}
 
 // ===== FORM STATE PRESERVATION =====
 // Form state persistence has been disabled to prevent automatic saving of user inputs.
@@ -219,7 +234,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (printBtn) {
         printBtn.addEventListener('click', () => {
-            const logoSrc = (document.querySelector('.deped-logo') || {}).src || '';
+            const logoSrc = 'depED-Logo.png';
 
             // Find the visible assessment section
             const activeSection = ['rftp-teacher', 'rftp-mt-i-iii', 'rftp-mt-iv-v']
@@ -276,18 +291,21 @@ document.addEventListener('DOMContentLoaded', () => {
 <head>
 <meta charset="UTF-8">
 <title>PPST Self-Assessment Report</title>
+<link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Cinzel:wght@700&display=swap" rel="stylesheet">
 <style>
   *{box-sizing:border-box;margin:0;padding:0;}
-  body{font-family:Arial,sans-serif;font-size:11pt;color:#1a1a1a;background:#fff;padding:24px 32px;}
+  body{font-family:Arial,sans-serif;font-size:11pt;color:#1a1a1a;background:#fff;padding:0 24px 24px;}
 
-  .ph{text-align:center;margin-bottom:20px;padding-bottom:12px;border-bottom:2px solid #059669;}
-  .ph img{height:64px;margin-bottom:6px;display:block;margin-left:auto;margin-right:auto;}
-  .ph h2{font-size:13pt;margin:4px 0 2px;}
-  .ph p{font-size:10pt;color:#555;}
-  .ph .rpt{font-size:12pt;font-weight:700;margin-top:8px;color:#059669;}
+  .ph{text-align:center;margin:0;padding-top:0;padding-bottom:8px;border-bottom:1.5px solid #1a1a1a;}
+  .ph img{height:73px;margin-top:0;margin-bottom:4px;display:block;margin-left:auto;margin-right:auto;}
+  .ph-republic{font-size:12pt;font-weight:700;font-family:'Old English Text MT','UnifrakturMaguntia',serif;margin:0 0 1px;color:#1a1a1a;}
+  .ph-deped{font-size:18pt;font-weight:700;font-family:'Old English Text MT','UnifrakturMaguntia',serif;margin:0;line-height:1.1;color:#1a1a1a;}
+  .ph-region{font-size:10pt;font-weight:700;font-family:'Cinzel','Trajan Pro',serif;letter-spacing:1px;margin:1px 0 0;color:#1a1a1a;}
+  .ph-division{font-size:10pt;font-weight:700;font-family:'Cinzel','Trajan Pro',serif;letter-spacing:0.5px;margin:1px 0 0;color:#1a1a1a;}
+  .rpt{font-size:12pt;font-weight:700;text-align:center;margin:8px 0 4px;color:#059669;}
 
-  .meta{margin-bottom:16px;font-size:11pt;}
-  .meta p{margin-bottom:4px;}
+  .meta{margin-top:8px;margin-bottom:10px;font-size:11pt;}
+  .meta p{margin-bottom:2px;}
 
   h2.sh{font-size:11.5pt;color:#059669;margin:20px 0 8px;padding-bottom:4px;border-bottom:1px solid #d1fae5;}
 
@@ -331,16 +349,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
   .pf{text-align:center;font-size:9pt;color:#9ca3af;margin-top:24px;padding-top:8px;border-top:1px solid #e5e7eb;}
 
-  @page{margin:1.5cm;}
+  @page{margin:10mm 15mm;}
 </style>
 </head>
 <body>
 <div class="ph">
   ${logoSrc ? `<img src="${logoSrc}" alt="School Seal">` : ''}
-  <h2>Dapa Central Elementary School and SPED Center-SSES</h2>
-  <p>Department of Education - Siargao Division</p>
-  <div class="rpt">PPST Self-Assessment Report</div>
+  <div class="ph-republic">Republic of the Philippines</div>
+  <div class="ph-deped">Department of Education</div>
+  <div class="ph-region">CARAGA REGION</div>
+  <div class="ph-division">SCHOOLS DIVISION OF SIARGAO</div>
 </div>
+<div class="rpt">PPST Self-Assessment Report</div>
 
 <div class="meta">
   <p><strong>Current Position:</strong> ${curPos}</p>
