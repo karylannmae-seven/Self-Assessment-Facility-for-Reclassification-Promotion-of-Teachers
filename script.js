@@ -354,7 +354,7 @@ document.addEventListener('DOMContentLoaded', () => {
 </head>
 <body>
 <div class="ph">
-  ${logoSrc ? `<img src="${logoSrc}" alt="School Seal">` : ''}
+  <img src="./DepEd-Logo.png" alt="DepEd Logo">
   <div class="ph-republic">Republic of the Philippines</div>
   <div class="ph-deped">Department of Education</div>
   <div class="ph-region">CARAGA REGION</div>
